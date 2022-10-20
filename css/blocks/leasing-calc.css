@@ -1,0 +1,155 @@
+.leasing-calc {
+  padding-top: 44px;
+  padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .leasing-calc {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .leasing-calc {
+    padding-top: 102px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc {
+    padding-top: 215px;
+    padding-bottom: 205px;
+  }
+}
+
+.leasing-calc__title {
+  margin-bottom: 31px;
+
+  font-family: 'Nekst';
+  font-weight: 900;
+  font-size: 34px;
+  line-height: .92;
+  color: var(--text-color-title);
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__title {
+    margin-bottom: 43px;
+    font-size: 54px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc__title {
+    margin-bottom: 30px;
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc__form {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 41px 32px;
+  }
+}
+
+.leasing-calc__value-field {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__value-field {
+    grid-column: span 2;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc__value-field {
+    grid-column: span 1;
+
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.leasing-calc__value-field:last-of-type {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__value-field:last-of-type {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc__value-field:last-of-type {
+    margin-bottom: 44px;
+  }
+}
+
+.leasing-calc__total-sum {
+  margin-top: 26px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__total-sum {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .leasing-calc__total-sum {
+    margin-top: 7px;
+  }
+}
+
+.leasing-calc__results {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__results {
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc__results {
+    margin-bottom: 0px;
+  }
+}
+
+.leasing-calc__submit-btn {
+  grid-column: span 2;
+
+  width: 100%;
+  max-width: 345px;
+}
+
+@media (min-width: 768px) {
+  .leasing-calc__submit-btn {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leasing-calc__submit-btn {
+    grid-column: span 1;
+    align-self: center;
+
+    margin-top: 0;
+    max-width: none;
+  }
+}

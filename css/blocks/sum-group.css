@@ -1,0 +1,28 @@
+.sum-group {
+  margin-bottom: 32px;
+  color: var(--text-color-main);
+}
+
+.sum-group__label {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .sum-group__label {
+    margin-bottom: 11px;
+    font-size: 16px;
+  }
+}
+
+.sum-group__sum {
+  font-family: 'Nekst';
+  font-size: 22px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .sum-group__sum {
+    font-size: 54px;
+  }
+}

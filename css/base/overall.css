@@ -1,0 +1,32 @@
+.btn-reset {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--max-width-container);
+	padding: 0 var(--padding-lr-container);
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--padding-lr-container-tablet);
+    padding-right: var(--padding-lr-container-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--padding-lr-container-desktop);
+    padding-right: var(--padding-lr-container-desktop);
+  }
+}
+
+.rub-symbol {
+  display: inline-block;
+  transform: translateY(-2px);
+}

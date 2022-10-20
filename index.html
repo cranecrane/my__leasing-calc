@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Leasing Calculator</title>
+  <meta name="description" content="Рассчитать стоимость автомобиля в лизинг">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="leasing-calc">
+      <div class="container leasing-calc__container">
+        <h1 class="leasing-calc__title">Рассчитайте стоимость автомобиля в&nbsp;лизинг</h1>
+        <form id="leasingForm" class="leasing-calc__form">
+          <div class="leasing-calc__value-field range-slider">
+            <label for="leasingAmount" class="range-slider__label">Стоимость автомобиля</label>
+            <div class="range-slider__num-wrapper">
+              <input type="text" id="leasingAmount" class="range-slider__num">
+              <div class="range-slider__units rub-symbol">&#8381;</div>
+            </div>
+            <div class="range-slider__slider" id="rangeLeasingAmount"></div>
+          </div>
+          <div class="leasing-calc__value-field range-slider">
+            <label for="leasingAmount" class="range-slider__label">Первоначальный взнос</label>
+            <div class="range-slider__num-wrapper">
+              <div class="range-slider__num--not-input range-slider__num"><span id="leasingInitialPay">420 000</span><span class="rub-symbol">&nbsp;&#8381;</span></div>
+              <div class="range-slider__num-wrapper--inner range-slider__num-wrapper">
+                <input type="text" id="leasingPercent" class="range-slider__num">
+                <div class="range-slider__units">%</div>
+              </div>
+            </div>
+            <div class="range-slider__slider" id="rangeLeasingPercent"></div>
+          </div>
+          <div class="leasing-calc__value-field range-slider">
+            <label for="leasingAmount" class="range-slider__label">Срок лизинга</label>
+            <div class="range-slider__num-wrapper">
+              <input type="text" id="leasingTerm" class="range-slider__num">
+              <div class="range-slider__units">мес.</div>
+            </div>
+            <div class="range-slider__slider" id="rangeLeasingTerm"></div>
+          </div>
+          <div class="leasing-calc__total-sum sum-group">
+            <div class="sum-group__label">Сумма договора лизинга</div>
+            <div class="sum-group__sum"><span id="leasingTotalSum">4 467 313</span><span class="rub-symbol">&nbsp;&#8381;</span></div>
+          </div>
+          <div class="leasing-calc__total-sum sum-group">
+            <div class="sum-group__label">Ежемесячный платеж от</div>
+            <div class="sum-group__sum"><span id="leasingMonthPay">16 000</span><span class="rub-symbol">&nbsp;&#8381;</span></div>
+          </div>
+          <button type="submit" id="leasingSubmitBtn" class="leasing-calc__submit-btn btn btn-reset">
+            <svg class="btn__spinner" width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.8691 19.3825C11.9455 20.1121 9.83718 20.1976 7.86093 19.6261C5.88468 19.0546 4.14734 17.857 2.91009 16.2134C1.67285 14.5698 1.00256 12.569 1.00001 10.5118C0.99745 8.45459 1.66276 6.45212 2.89591 4.80546C4.12906 3.15879 5.86342 1.95691 7.83825 1.38051C9.81307 0.804109 11.9216 0.88433 13.847 1.60911C15.7723 2.3339 17.4103 3.66408 18.5148 5.39968C19.6193 7.13528 20.1305 9.18251 19.9716 11.2336" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="btn__text">Оставить заявку</span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/vendor/wNumb.min.js"></script>
+  <script src="js/vendor/nouislider.min.js"></script>
+
+  <script src="js/leasing-calc.js"></script>
+</body>
+</html>

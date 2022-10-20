@@ -1,0 +1,62 @@
+.btn {
+  border: none;
+  border-radius: 40px;
+  padding-top: 19px;
+  padding-bottom: 21px;
+  padding-left: 41px;
+  padding-right: 41px;
+
+  font-family: 'Nekst';
+  font-size: 22px;
+  line-height: 1;
+  color: var(--text-color-inverse);
+  text-align: center;
+
+  background-color: var(--accent-color-main);
+  transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #111;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn:active,
+.btn:focus-visible {
+  outline: none;
+  background-color: #575757;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn:disabled {
+  opacity: .4;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 30px;
+  }
+}
+
+.btn__spinner {
+  display: none;
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn:disabled .btn__spinner {
+  display: inline;
+}
+
+.btn:disabled .btn__text {
+  display: none;
+}

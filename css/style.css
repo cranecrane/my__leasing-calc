@@ -1,0 +1,18 @@
+/*** vendors ***/
+@import "vendor/normalize.css";
+@import "vendor/nouislider.min.css";
+
+/*** base ***/
+@import "base/variables.css";
+
+@import "base/fonts.css";
+@import "base/global.css";
+@import "base/overall.css";
+
+/*** blocks ***/
+@import "blocks/btn.css";
+
+@import "blocks/range-slider.css";
+@import "blocks/sum-group.css";
+
+@import "blocks/leasing-calc.css";

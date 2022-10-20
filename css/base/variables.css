@@ -1,0 +1,15 @@
+:root {
+    /*** colors ***/
+	--accent-color-main: #ff9514;
+  --text-color-inverse: #fff;
+  --text-color-light: #575757;
+  --text-color-main: #333;
+  --text-color-title: #111;
+
+  /*** sizes ***/
+  --site-min-width: 320px;
+  --max-width-container: 1440px;
+  --padding-lr-container: 20px;
+  --padding-lr-container-tablet: 36px;
+  --padding-lr-container-desktop: 48px;
+}
